@@ -4,10 +4,9 @@
     <div class="project" v-for="project in projects" :key="project.id">
 
         <h1>{{project.title}}</h1>
-        <audio controls="controls" src="/audio/sample-3s.mp3">
+        <audio controls="controls" :src="'audio/'+project.audio">
             Your browser does not support the HTML5 Audio element.
         </audio>
-
 
 
     </div>
@@ -38,12 +37,14 @@ export default {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .project {
   margin: 10px;
   margin-top: 50px;
-  width: 200px;
+  width: 300px;
+  justify-content: center;
 }
 
 .info {

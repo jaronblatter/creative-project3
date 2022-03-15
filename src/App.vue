@@ -6,7 +6,11 @@
       <router-link to="/projects">Projects</router-link>
     </nav>
     <router-view/>
+    <div class="footer">
+            <a href="https://github.com/jaronblatter/creative-project3.git">Github</a>
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -26,6 +30,13 @@ export default {
 
 nav {
   padding: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  background-color: #42b983;
 }
 
 nav a {
